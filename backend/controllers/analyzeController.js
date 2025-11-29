@@ -9,16 +9,16 @@ export async function analyzeResume(req, res) {
     let resumeText = "";
 
     // If file provided → parse PDF
-    if (req.file) {
+    if (req.file && req.file.buffer) {
       resumeText = await extractTextFromPdf(req.file.buffer);
-    }
+    } 
 
     // If raw text provided
     if (req.body.text) {
       resumeText = req.body.text;
     }
 
-    if (!resumeText.trim()) {
+    if (!resumeText || !resumeText.trim()) {
       return res.status(400).json({ error: "No resume text found" });
     }
 
