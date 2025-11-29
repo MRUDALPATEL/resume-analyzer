@@ -1,9 +1,12 @@
 export async function analyzeResume({ file }) {
+
+  const BASE_URL = "https://resume-analyzer-jnaa.onrender.com";
+
   if (file) {
     const formData = new FormData();
     formData.append("file", file);
 
-    const res = await fetch("http://localhost:5000/api/analyze", {
+    const res = await fetch({BASE_URL}, {
       method: "POST",
       body: formData,
     });
