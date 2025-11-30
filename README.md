@@ -54,15 +54,12 @@ resume-analyzer
 ## 🌐 **Live URLs**
 
 **Frontend (Netlify):**
-<YOUR_NETLIFY_URL_HERE>
+https://splendorous-pasca-dfb4f9.netlify.app/
 
 **Backend (Render):**
-[https://resume-analyzer-jnaa.onrender.com](https://resume-analyzer-jnaa.onrender.com)
+https://resume-analyzer-jnaa.onrender.com
 
-**API Endpoint:**
-`POST https://resume-analyzer-jnaa.onrender.com/api/analyze`
 
----
 
 ## 🧰 **Environment Variables**
 
@@ -72,12 +69,6 @@ resume-analyzer
 MONGO_URI=<your MongoDB Atlas URI>
 OPENAI_API_KEY=<your OpenAI key>
 PORT=5000
-```
-
-### **Frontend (.env)**
-
-```
-VITE_API_URL=https://resume-analyzer-jnaa.onrender.com/api/analyze
 ```
 
 ---
@@ -128,11 +119,6 @@ Publish folder:
 dist
 ```
 
-Environment variables:
-
-```
-VITE_API_URL=<backend-url>
-```
 
 ---
 
@@ -168,9 +154,6 @@ OPENAI_API_KEY
 * Add multiple AI analysis modes
 * Improve scoring system
 * Add export as PDF
-* Add login/authentication
 * Add resume improvement suggestions
 
 ---
-
-If you want, I can format it differently (minimal, fancy, or company-style), or generate a **PDF version** for submission.
